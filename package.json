@@ -2,15 +2,22 @@
   "name": "travis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha --exit",
+    "start": "node dist/common.bundle.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "generate": "^0.14.0",
-    "generate-travis": "^0.3.1"
+    "generate-travis": "^0.3.1",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
